@@ -1,6 +1,6 @@
 :root {
    --primary: crimson;
-   --dark: #1f2937;
+   --dark: #272e3b;
    --darkdark: #111827;
    --light: #f3f4f6;
 }
@@ -14,16 +14,30 @@
 body {
    background: var(--dark);
    color: var(--light);
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+.fa-clock {
+   position: absolute;
+   opacity: 0.1;
+   pointer-events: none;
+   transform: translate(5rem, 6rem);
+}
+/* TRY TO CLIP THE IMAGE, IF CANT -- DELETE */
 
 .watch {
    text-align: center;
    background: var(--darkdark);
    width: 100%;
    max-width: 360px;
-   margin: 4rem auto;
-   padding: 1rem 2rem;
+   /* margin: 4rem auto; */
+   padding: 4rem 2rem;
    border-radius: 1rem;
+   position: relative;
+   overflow: hidden;
 }
 
 .time {
@@ -57,7 +71,8 @@ body {
 }
 
 button:hover {
-   opacity: 0.7;
+   /* opacity: 0.7; */
+   transform: scale(1.04);
 }
 
 button:active {
