@@ -1,0 +1,79 @@
+:root {
+   --light: #f3f4f6;
+   --dark: #272e3b;
+   --link-hover: #c55324;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+h1 {
+   margin-top: 0;
+   font-weight: 500;
+}
+
+.text {
+   font-size: 60px;
+   font-weight: bold;
+}
+
+small {
+   font-weight: lighter;
+}
+
+body {
+   background: var(--light);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   font-size: 36px;
+   font-family: "poppins", sans serif;
+   margin: 0;
+   color: var(--light);
+}
+
+.container {
+   background-image: url(img/eberhard-grossgasteiger-wUWP53W7KbY-unsplash.jpg);
+   background-repeat: no-repeat;
+   background-position: 0;
+   background-size: cover;
+   width: 100%;
+   padding: 3em;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px;
+}
+
+.countdown {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+}
+
+.github-link {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.github-link a {
+   font-size: 16px;
+   color: var(--dark);
+   display: flex;
+}
+
+.github-link a p:hover {
+   color: var(--link-hover);
+}
+
+.github-link a img {
+   width: 40px;
+}
+
+.github-link a p {
+   margin-left: 1rem;
+}

@@ -14,7 +14,7 @@
 body {
    background: var(--dark);
    color: var(--light);
-   height: 80vh;
+   height: 100vh;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -38,6 +38,7 @@ body {
    border-radius: 1rem;
    position: relative;
    overflow: hidden;
+   transform: translateY(-10rem);
 }
 
 .time {
@@ -77,4 +78,32 @@ button:hover {
 
 button:active {
    background: var(--dark);
+}
+
+.github-link {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.github-link a {
+   font-size: 16px;
+   color: var(--light);
+   display: flex;
+}
+
+.github-link a:hover {
+   color: var(--primary);
+}
+
+.github-link a img {
+   width: 40px;
+}
+
+.github-link a p {
+   margin-left: 1rem;
+   display: flex;
+   align-items: center;
 }
