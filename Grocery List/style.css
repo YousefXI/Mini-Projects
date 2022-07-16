@@ -176,12 +176,11 @@ hr {
 
 .github-link a {
    font-size: 16px;
-   color: var(--light);
    display: flex;
 }
 
 .github-link a:hover {
-   color: #ab9a89;
+   color: var(--accent-clr);
 }
 
 .github-link a img {
