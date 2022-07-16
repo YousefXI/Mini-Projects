@@ -3,163 +3,193 @@
 /* ------------------ */
 
 :root {
-  --primary-clr: #fff;
-  --accent-clr: #fff;
-  --body-clr: #fff;
-  --btn-color: #fff;
- }
- 
- /* ------------------ */
- /* Reset */
- /* ------------------ */
- 
- /* Box sizint */
- 
- *,
- *::before,
- *::after {
-  box-sizing: border-box;
- }
- 
- /* Reset margin */
- 
- body,
- h1,
- h2,
- h3,
- h4,
- h5,
- p,
- figure,
- picture {
-  margin: 0;
- }
- 
- /*body */
- body {
-  line-height: 1.5;
-  min-height: 100vh;
- }
- 
- /* images */
- img,
- picture {
-  max-width: 100%;
-  display: block;
- }
- 
- /* forms elements */
- input,
- button,
- textarea,
- select {
-  font: inherit;
- }
- 
- /* ------------------ */
- /* Utility classes */
- /* ------------------ */
- 
- .flex {
-  display: flex;
-  gap: var(--gap, 1rem);
- }
- 
- .grid {
-  display: grid;
-  gap: var(--gap, 1rem);
- }
- 
- .box {
-  display: flex;
-  background: lightblue;
-  padding: 3rem;
-  justify-content: center;
- }
+   --primary-clr: #f8e0c7;
+   --accent-clr: #ab9a89;
+   --body-clr: #f8f1ed;
+   --btn-color: #e0cca8;
+}
 
- /* STYLING */
+/* ------------------ */
+/* Reset */
+/* ------------------ */
+
+/* Box sizint */
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+   margin: 0;
+}
+
+/*body */
+body {
+   line-height: 1.5;
+   min-height: 100vh;
+}
+
+/* images */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+/* forms elements */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* ------------------ */
+/* Utility classes */
+/* ------------------ */
+
+.flex {
+   display: flex;
+   gap: var(--gap, 1rem);
+}
+
+.grid {
+   display: grid;
+   gap: var(--gap, 1rem);
+}
+
+.box {
+   display: flex;
+   background: lightblue;
+   padding: 3rem;
+   justify-content: center;
+}
+
+/* STYLING */
 
 body {
-  display: flex;
-  justify-content: center;
-  font-family: "Poppins", sans-serif;
-  background: #f8f1ed;
+   display: flex;
+   justify-content: center;
+   font-family: "Poppins", sans-serif;
+   background: var(--body-clr);
 }
 
 .container {
-  margin-block: 8rem;
-  background: #f8e0c7;
-  padding: 2rem 10rem;
-  border-radius: 20px;
-  border: 2px solid #ab9a89;
-  box-shadow: lightslategray 2px 2px 20px;
+   margin-block: 8rem;
+   background: var(--primary-clr);
+   padding: 2rem 10rem;
+   border-radius: 20px;
+   border: 2px solid var(--accent-clr);
+   box-shadow: lightslategray 2px 2px 20px;
 }
 
 form {
-  margin-top: 3rem;
-  display: flex;
-  min-width: 30%;
+   margin-top: 3rem;
+   display: flex;
+   min-width: 30%;
 }
 
 h1 {
-  font-size: 3rem;
-  text-align: center;
+   font-size: 3rem;
+   text-align: center;
 }
 
 p {
-  margin-top: 1rem;
-  text-align: center;
-  opacity: 0.8;
+   margin-top: 1rem;
+   text-align: center;
+   opacity: 0.8;
 }
 
 form input,
-form button{
-  border: none;
-  padding: 12px;
-  margin-bottom: 1rem;
+form button {
+   border: 1px solid var(--accent-clr);
+   padding: 12px;
+   margin-bottom: 1rem;
 }
 
 form input {
-  border-radius: 8px 0 0 8px;
+   border-radius: 8px 0 0 8px;
+   border-right: none;
 }
 
 form button {
-  background: #ab9a89;
-  border-radius: 0 8px 8px 0;
+   background: var(--accent-clr);
+   border-radius: 0 8px 8px 0;
 }
 
 form button:hover {
-  background: #E0CCA8;
-  cursor: pointer;
+   background: var(--btn-color);
+   cursor: pointer;
 }
 
 hr {
-  margin-block: 3rem;
-  border: 1px solid #ab9a89;
+   margin-block: 3rem;
+   border: 1px solid var(--accent-clr);
 }
 
 .list-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .grocery-list {
-  list-style: none;
-  min-width: 30%;
+   list-style: none;
+   min-width: 30%;
 }
 
 .grocery {
-  margin-top: 1.5rem;
-  /* padding: 0.5rem; */
-  color: black;
-  font-size: 1.4rem;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+   margin-top: 1.5rem;
+   /* padding: 0.5rem; */
+   color: black;
+   font-size: 1.4rem;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
 }
 
 .completed {
-  text-decoration: line-through;
-  opacity: 0.5;
+   text-decoration: line-through;
+   opacity: 0.5;
+}
+
+/* Github profile */
+.github-link {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.github-link a {
+   font-size: 16px;
+   color: var(--light);
+   display: flex;
+}
+
+.github-link a:hover {
+   color: #ab9a89;
+}
+
+.github-link a img {
+   width: 40px;
+}
+
+.github-link a p {
+   margin-left: 1rem;
+   display: flex;
+   align-items: center;
 }
