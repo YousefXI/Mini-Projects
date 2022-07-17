@@ -23,4 +23,4 @@ function updateCountowntime() {
    seconds.innerHTML = s < 10 ? "0" + s : s;
 }
 
-setInterval(updateCountowntime, 1000);
+setInterval(updateCountowntime, 0);
