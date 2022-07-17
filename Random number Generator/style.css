@@ -2,6 +2,8 @@
    --dark: #272e3b;
    --darkdark: #111827;
    --light: #f3f4f6;
+   --btnColor: #a89e91;
+   --btnColor2: #756e64;
 }
 
 input {
@@ -76,10 +78,10 @@ h3 {
 
 #dice-svg {
    position: absolute;
-   top: 10rem;
-   right: -9rem;
+   top: 13rem;
+   right: -10rem;
    width: 500px;
-   opacity: 0.03;
+   opacity: 0.04;
    pointer-events: none;
 }
 
@@ -97,10 +99,9 @@ h3 {
    display: flex;
    margin: 0 auto;
    margin-top: 3rem;
-
    border: none;
-   background: #a89e91;
-   border-bottom: 4px solid #756e64;
+   background: var(--btnColor);
+   border-bottom: 4px solid var(--btnColor2);
    border-radius: 5px;
    padding: 1rem 4rem;
    cursor: pointer;
@@ -110,5 +111,5 @@ h3 {
 }
 
 .generate:hover {
-   background: #756e64;
+   background: var(--btnColor2);
 }
