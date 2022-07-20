@@ -1,0 +1,121 @@
+/* ------------------ */
+/* Custom properties */
+/* ------------------ */
+
+:root {
+   --primary: crimson;
+   --dark: #272e3b;
+   --darkdark: #111827;
+   --light: #f3f4f6;
+}
+
+/* ------------------ */
+/* Reset */
+/* ------------------ */
+
+/* Box sizint */
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+   margin: 0;
+}
+
+/*body */
+body {
+   line-height: 1.5;
+   min-height: 100vh;
+}
+
+/* images */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+/* forms elements */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* ---------------
+------STYLING-----
+------------------*/
+
+body {
+   background: var(--darkdark);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   font-size: 24px;
+   font-family: "poppins", sans-serif;
+   margin: 0;
+   color: var(--light);
+}
+
+h1 {
+   position: absolute;
+   top: 1.5em;
+   font-size: 55px;
+}
+
+.container {
+   margin-bottom: 1.5em;
+   display: flex;
+   flex-direction: column;
+   background: var(--dark);
+   padding: 2em;
+   border-radius: 10px;
+}
+
+input {
+   margin-bottom: 1em;
+}
+
+.submit-btn {
+   appearance: none;
+   background: none;
+   border: none;
+   outline: none;
+   user-select: none;
+   cursor: pointer;
+
+   color: var(--light);
+   font-size: 1.125rem;
+   background-color: var(--primary);
+   margin-top: 2rem;
+   padding: 0.6rem 1rem;
+   border-radius: 0.5rem;
+
+   transition: 0.2s;
+}
+
+.submit-btn:hover {
+   transform: translateY(-1px);
+   background: rgb(181, 16, 49);
+}
+
+.text-output {
+   margin-top: 3.5rem;
+   border-bottom: 2px solid var(--light);
+}
