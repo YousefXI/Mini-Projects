@@ -85,7 +85,7 @@ h3 {
    pointer-events: none;
 }
 
-.result {
+.output {
    flex: 1;
    text-align: center;
 }
