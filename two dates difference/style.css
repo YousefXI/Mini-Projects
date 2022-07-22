@@ -86,6 +86,8 @@ h1 {
    background: var(--dark);
    padding: 2em;
    border-radius: 10px;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 input {
@@ -118,4 +120,32 @@ input {
 .text-output {
    margin-top: 3.5rem;
    border-bottom: 2px solid var(--light);
+}
+
+.github-link {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.github-link a {
+   font-size: 16px;
+   color: var(--light);
+   display: flex;
+}
+
+.github-link a:hover {
+   color: var(--primary);
+}
+
+.github-link a img {
+   width: 40px;
+}
+
+.github-link a p {
+   margin-left: 1rem;
+   display: flex;
+   align-items: center;
 }
