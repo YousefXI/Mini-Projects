@@ -113,3 +113,32 @@ h3 {
 .generate:hover {
    background: var(--btnColor2);
 }
+
+.github-link {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 1rem;
+}
+
+.github-link a {
+   font-size: 16px;
+   color: var(--darkdark);
+   display: flex;
+}
+
+.github-link a:hover {
+   color: var(--btnColor2);
+}
+
+.github-link a img {
+   width: 40px;
+}
+
+.github-link a p {
+   margin-left: 1rem;
+   display: flex;
+   align-items: center;
+   font-weight: 20px;
+}
