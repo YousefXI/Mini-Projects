@@ -94,6 +94,7 @@ body {
    padding: 10rem;
    margin-bottom: 3rem;
    background: #fff8dc;
+   border-radius: 8px;
 }
 
 .btn {
@@ -111,3 +112,5 @@ body {
    color: var(--dark);
    transition: 300ms;
 }
+
+/* github link */
