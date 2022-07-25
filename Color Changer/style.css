@@ -112,6 +112,12 @@ body {
    transition: 300ms;
 }
 
+.btn:active {
+   box-shadow: inset 0 -70px 0 0 #b9b9bb;
+   transition: 0ms;
+   border: 2px solid #b9b9bb;
+}
+
 /* github link */
 
 .github-link {
