@@ -1,0 +1,159 @@
+/* ------------------ */
+/* Custom properties */
+/* ------------------ */
+
+:root {
+   --primary: #dab78a;
+   --dark: #272e3b;
+   --darkdark: #111827;
+   --light: #f3f4f6;
+}
+
+/* ------------------ */
+/* Reset */
+/* ------------------ */
+
+/* Box sizint */
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/* Reset margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+   margin: 0;
+}
+
+/*body */
+body {
+   line-height: 1.5;
+   min-height: 100vh;
+}
+
+/* images */
+img,
+picture {
+   max-width: 100%;
+   display: block;
+}
+
+/* forms elements */
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+
+/* ------ STYLING ------- */
+
+body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: var(--primary);
+   /* color: var(--light); */
+   font-family: "Poppins", sans-serif;
+}
+
+.container {
+   width: 375px;
+   padding: 30px;
+   border-radius: 7px;
+   background: var(--light);
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   transform: translateY(-3rem);
+}
+
+.wrapper header {
+   font-size: 26px;
+   font-weight: 500;
+   text-align: center;
+}
+
+.container form {
+   margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+   width: 100%;
+   outline: none;
+   border: none;
+}
+
+form p {
+   font-size: 18px;
+   margin-bottom: 5px;
+}
+
+form input {
+   height: 2.5rem;
+   font-size: 17px;
+   padding: 0 15px;
+   border: 1px solid #999;
+}
+
+form input:focus {
+   padding: 0 14px;
+   border: 2px solid var(--primary);
+}
+
+.drop-list {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.select-box {
+   display: flex;
+   height: 40px;
+   width: 115px;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #999;
+   border-radius: 5px;
+   background: var(--light);
+}
+
+.select-box select {
+   width: auto;
+   font-size: 16px;
+   margin: 0 -5px 0 5px;
+}
+
+.select-box img {
+   max-width: 25px;
+}
+
+.drop-list .icon {
+   cursor: pointer;
+   font-size: 20px;
+   margin-top: 30px;
+}
+
+.exchange-rate {
+   font-size: 17px;
+   margin: 20px 0 30px;
+}
+
+form button {
+   height: 52px;
+   font-size: 17px;
+   cursor: pointer;
+   background: var(--primary);
+   border-radius: 5px;
+   columns: white;
+}
