@@ -146,6 +146,11 @@ input {
    width: 40px;
 }
 
+.github-link .icon {
+   color: white;
+   font-size: 35px;
+}
+
 .github-link a p {
    margin-left: 1rem;
    display: flex;
