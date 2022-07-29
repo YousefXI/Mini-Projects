@@ -11,5 +11,9 @@ function run() {
 
    const number = randomInteger(minNumber, maxNumber);
 
-   document.querySelector(".number-generated").innerHTML = number;
+   document.querySelector(".number-generated").innerText = number;
+
+   if (number === "NaN") {
+      number.innerText = no;
+   }
 }

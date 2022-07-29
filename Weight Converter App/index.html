@@ -14,42 +14,37 @@
 
 <body>
    <div class="container">
-      <header>Currency Converter</header>
+      <header>Weight Converter</header>
       <form action="#">
          <div class="amount">
             <p>Enter Amount</p>
-            <input type="text" value="1">
+            <input type="number" class="input" value="1">
          </div>
          <div class="drop-list">
             <div class="from">
                <p>From</p>
                <div class="select-box">
-
-                  <select>
-                     <option value="USD">USD</option>
-                     <option value="NPR">NPR</option>
-                     <option value="INR">INR</option>
-                     <option value="PRK">PRK</option>
-                     <option value="EUR">EUR</option>
+                  <select id="from">
+                     <option value="KG" id="kg">Kg</option>
+                     <option value="LBS" id="lbs">Lbs</option>
+                     <option value="OZ" id="oz">Oz</option>
                   </select>
                </div>
             </div>
             <div class="icon"><i class="fa fa-exchange-alt"></i></div>
-            <div class="from">
+            <div class="to">
                <p>To</p>
                <div class="select-box">
-                  <select>
-                     <option value="USD">USD</option>
-                     <option value="NPR">NPR</option>
-                     <option value="INR">INR</option>
-                     <option value="PRK">PRK</option>
-                     <option value="EUR">EUR</option>
+                  <select id="to">
+                     <option value="KG">Kg</option>
+                     <option value="LBS">Lbs</option>
+                     <option value="OZ">Oz</option>
                   </select>
                </div>
             </div>
          </div>
-         <div class="exchange-rate">1 USD = 118.16 NPR</div>
-         <button>Get Exchange Rate</button>
+         <div class="output">1 KG = 2.205 lbs</div>
+         <button class="converter-btn">Get Weight</button>
       </form>
    </div>
 </body>
