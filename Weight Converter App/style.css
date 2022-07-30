@@ -112,11 +112,11 @@ form input:focus {
    border: 2px solid var(--primary);
 }
 
-.amount {
+.amount-wrapper {
    margin-bottom: 20px;
 }
 
-.converter-btn {
+#reset-btn {
    height: 52px;
    font-size: 17px;
    cursor: pointer;
