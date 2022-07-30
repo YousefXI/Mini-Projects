@@ -16,34 +16,18 @@
    <div class="container">
       <header>Weight Converter</header>
       <form action="#">
-         <div class="amount">
-            <p>Enter Amount</p>
-            <input type="number" class="input" value="1">
+         <div class="amount amount_kg">
+            <p>Kg:</p>
+            <input type="number" class="input kg">
          </div>
-         <div class="drop-list">
-            <div class="from">
-               <p>From</p>
-               <div class="select-box">
-                  <select id="from">
-                     <option value="KG" id="kg">Kg</option>
-                     <option value="LBS" id="lbs">Lbs</option>
-                     <option value="OZ" id="oz">Oz</option>
-                  </select>
-               </div>
-            </div>
-            <div class="icon"><i class="fa fa-exchange-alt"></i></div>
-            <div class="to">
-               <p>To</p>
-               <div class="select-box">
-                  <select id="to">
-                     <option value="KG">Kg</option>
-                     <option value="LBS">Lbs</option>
-                     <option value="OZ">Oz</option>
-                  </select>
-               </div>
-            </div>
+         <div class="amount amount_lbs">
+            <p>Pounds:</p>
+            <input type="number" class="input lbs">
          </div>
-         <div class="output">1 KG = 2.205 lbs</div>
+         <div class="amount amount_oz">
+            <p>Ounces:</p>
+            <input type="number" class="input oz">
+         </div>
          <button class="converter-btn">Get Weight</button>
       </form>
    </div>
