@@ -3,7 +3,7 @@ let lbsRef = document.getElementById("lbs");
 let ozRef = document.getElementById("oz");
 let inputs = document.querySelectorAll("input");
 
-const resetBtn = document.getElementById("reset-btn");
+const clearBtn = document.getElementById("clear-btn");
 
 let convertFromKg = () => {
    let kg = kgRef.value;
@@ -23,7 +23,7 @@ let convertFromOz = () => {
    lbsRef.value = (oz / 16).toFixed(2);
 };
 
-resetBtn.addEventListener("click", () => {
+clearBtn.addEventListener("click", () => {
    inputs.forEach((input) => (input.value = ""));
 });
 
