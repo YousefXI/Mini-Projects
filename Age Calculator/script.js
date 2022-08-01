@@ -11,7 +11,6 @@ const ageMinutes = document.getElementById("ageMinutes");
 const ageSeconds = document.getElementById("ageSeconds");
 
 datePicker.addEventListener("change", function () {
-   var options = { year: "number", month: "long", day: "numeric" };
    var selectedDate = new Date(this.value);
    var DOB = selectedDate.toLocaleDateString(); //Grabbing The Date Selected
 
