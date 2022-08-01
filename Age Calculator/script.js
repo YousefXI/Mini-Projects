@@ -16,7 +16,7 @@ datePicker.addEventListener("change", function () {
    var DOB = selectedDate.toLocaleDateString(); //Grabbing The Date Selected
 
    console.log("DOB IS : " + DOB);
-   chosenDate.innerHTML = "DOB : " + " " + DOB;
+   chosenDate.innerHTML = "Date: " + DOB;
 
    var millisecondsBtwDOB = Date.parse(DOB);
    var millisecondsBtwNow = Date.now();
@@ -48,6 +48,8 @@ datePicker.addEventListener("change", function () {
    ageDays.innerHTML = days;
    ageMinutes.innerHTML = hours;
    ageSeconds.innerHTML = seconds;
+
+   document.querySelector(".age-calc").classList.add("expand");
 });
 
 // https://www.youtube.com/watch?v=_jd6x6Ze9Qg&list=PLimvEekCsmZ99z-kjg6fZB0ZzXGfIVSYk

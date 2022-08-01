@@ -111,17 +111,26 @@ body {
    box-shadow: 0 0 4px #292929;
 }
 
+.date-picker #chosenDate {
+   margin-left: auto;
+}
+
 .age-calc {
-   display: flex;
+   display: none;
+   /* display: flex; */
    justify-content: space-between;
    margin-top: 50px;
    gap: 2rem;
 }
 
+.expand {
+   display: flex;
+}
+
 .age-calc .age-box {
    background: var(--primary);
    padding: 30px;
-   width: 180px;
+   width: 170px;
    border-radius: 10px;
    border-top: 35px solid var(--secondary);
    text-align: center;
