@@ -5,7 +5,7 @@ const seconds = document.getElementById("seconds");
 
 const currentYear = new Date().getFullYear();
 
-const fallSeasonTime = new Date(`September 22 2022 00:00:00`);
+const fallSeasonTime = new Date(`September 22 2023 00:00:00`);
 
 //Update Countdown time
 function updateCountowntime() {
